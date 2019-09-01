@@ -1,0 +1,68 @@
+.cardpeek-footer {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    text-align: center; }
+  
+  .cardpeek-body {
+    position: relative;
+    width: auto; }
+  
+  .cardpeek-image {
+    display: block;
+    border: 1px solid black;
+    border-radius: 16px;
+    margin: 0px auto;
+    max-width: calc( 100vw - 20px);
+    max-height: 300px; }
+  
+  @media (max-width: 543px) {
+    .cardpeek-container {
+      position: fixed;
+      z-index: 2000;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      left: 0 !important;
+      top: 0 !important;
+      display: flex;
+      flex-flow: column; }
+    .cardpeek-footer {
+      display: block; }
+    .cardpeek-image {
+      max-height: calc( 100vh - 60px); } }
+  
+  @media (min-width: 544px) {
+    .cardpeek-container {
+      margin: 0;
+      position: absolute;
+      z-index: 2000;
+      background-color: transparent; }
+    .cardpeek-footer {
+      display: none; } }
+  
+  @media (hover: none) {
+    .cardpeek-container {
+      position: fixed;
+      z-index: 2000;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      left: 0 !important;
+      top: 0 !important;
+      display: flex;
+      flex-flow: column; }
+    .cardpeek-footer {
+      display: block; }
+    .cardpeek-image {
+      max-height: calc( 100vh - 60px); } }
+  
+  @media (hover: hover) and (min-width: 544px) {
+    .cardpeek-container {
+      margin: 0;
+      position: absolute;
+      z-index: 2000;
+      background-color: transparent; }
+    .cardpeek-footer {
+      display: none; } }
+  

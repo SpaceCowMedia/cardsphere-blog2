@@ -1,0 +1,81 @@
+.decklist {
+  overflow: hidden;
+  float: left;
+  clear: both;
+  background: #e5eff5;
+  border-radius: 3px;
+
+  /* specific to theme */
+  min-width: initial !important;
+  align-self: left !important;
+}
+
+.decklist li {
+  margin: 0;
+  line-height: 1.3em;
+}
+
+.decklist ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.decklist-mainboard, .decklist-sideboard {
+  list-style-type: none;
+  float: left;
+  margin: 20px;
+  padding: 0px;
+
+  /* specific to theme */
+  min-width: initial !important;
+}
+
+.decklist-mainboard-sublist {
+  margin-top: 10px;
+}
+
+.decklist-sideboard::before {
+  content: "Sideboard:";
+  font-weight: bold;
+}
+
+.decklist-mainboard::before {
+  content: "Mainboard:";
+  font-weight: bold;
+}
+
+.decklist-mainboard-creature::before {
+  content: "Creatures";
+}
+.decklist-mainboard-planeswalker::before {
+  content: "Planeswalkers";
+}
+.decklist-mainboard-instant::before {
+  content: "Instants";
+}
+.decklist-mainboard-sorcery::before {
+  content: "Sorceries";
+}
+.decklist-mainboard-land::before {
+  content: "Lands";
+}
+.decklist-mainboard-artifact::before {
+  content: "Artifacts";
+}
+.decklist-mainboard-enchantment::before {
+  content: "Enchantments"
+}
+
+/* specific to theme */
+pre {
+  background-color: #e5eff5 !important;
+  border-radius: 3px  !important;
+  color: initial  !important;
+  border: none  !important;
+}
+
+/* specific to theme */
+code {
+  background-color: #e5eff5 !important;
+  color: initial  !important;
+}
