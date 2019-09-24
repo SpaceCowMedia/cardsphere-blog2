@@ -14,6 +14,12 @@
     --whitegrey: #e5eff5;
     --pink: #fa3a57;
     --brown: #a3821a;
+
+    --cs-dark-blue: #344a5e;
+    --cs-dark-grey: #555;
+    --cs-blue: #007bff;
+    --cs-white: #fff;
+    --cs-light-grey: #ecf0f1;
 }
 
 /* Reset
@@ -415,7 +421,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color: color(var(--cs-blue));
     text-decoration: none;
 }
 

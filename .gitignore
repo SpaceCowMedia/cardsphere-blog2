@@ -5,5 +5,5 @@ content/data/*.db
 content/logs/
 config.production.json
 content/data/ghost-local.db
-
-!content/themes/.gitkeep
+content/themes
+!content/themes/cardsphere
