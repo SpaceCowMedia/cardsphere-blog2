@@ -67,12 +67,15 @@ function createConfig() {
       transports: ["stdout"]
     },
     mail: {
-      transport: 'SMTP',
+      from: process.env.SMTP_FROM,
+      transport: "SMTP",
       options: {
-        service: 'Mailgun',
+        port: 587,
+        host: "smtp.sendgrid.net",
+        secureConnection: false,
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD
+          user: "apikey",
+          pass: process.env.SENDGRID_API_KEY
         }
       }
     },
